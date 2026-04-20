@@ -144,6 +144,26 @@
  
 .tag:first-child { border-top: 1px solid var(--gray); }
  
+.project-gallery-cta {
+  padding: 3rem 2rem;
+  text-align: left;
+  border-bottom: var(--border);
+}
+
+.project-gallery-cta button {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  padding: 1.25rem 2.5rem;
+  border: var(--border);
+  transition: background var(--transition), color var(--transition);
+}
+
+.project-gallery-cta button:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
 /* PAGINATION */
 .project-pagination {
   display: grid;
