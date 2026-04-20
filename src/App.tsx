@@ -31,19 +31,21 @@ function ScrollToTop() {
 export default function App() {
   return (
     <BrowserRouter basename="/portfolio_diletta/">
-      <Prefetcher />
-      <ScrollToTop />
-      <Navbar />
-      <Suspense fallback={<div className="loading">LOADING...</div>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project/:id" element={<ProjectPage />} />
-          <Route path="/project/:id/gallery" element={<GalleryPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contacts" element={<ContactsPage />} />
-        </Routes>
-      </Suspense>
-      <Footer />
+      <div id="root">
+        <Prefetcher />
+        <ScrollToTop />
+        <Navbar />
+        <Suspense fallback={<div className="loading">LOADING...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/project/:id" element={<ProjectPage />} />
+            <Route path="/project/:id/gallery" element={<GalleryPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+          </Routes>
+        </Suspense>
+        <Footer />
+      </div>
     </BrowserRouter>
   )
 }

@@ -197,3 +197,13 @@
   .project-card { width: clamp(240px, 75vw, 300px); }
   .scroll-btn { width: 2.5rem; height: 2.5rem; font-size: 0.9rem; }
 }
+
+@media (max-width: 768px) {
+  .scroll-btn {
+    display: none;
+  }
+
+  .projects-track {
+    padding: 1rem;
+  }
+}
