@@ -1,0 +1,113 @@
+.contacts-page {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: var(--border);
+  position: sticky;
+  top: 64px;
+  background: var(--white);
+  z-index: 100;
+}
+
+.contacts-nav button {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  transition: opacity var(--transition);
+}
+
+.contacts-nav button:hover { opacity: 0.4; }
+
+.contacts-nav span {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--mid);
+}
+
+.contacts-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex: 1;
+}
+
+.contacts-left {
+  padding: 3rem 2rem;
+  border-right: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contacts-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: var(--mid);
+  margin-top: 2rem;
+}
+
+.contacts-label:first-child { margin-top: 0; }
+
+.contacts-email {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity var(--transition);
+}
+
+.contacts-email:hover { opacity: 0.4; }
+
+.contacts-location {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+}
+
+.contacts-right {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contacts-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--gray);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  transition: padding-left var(--transition);
+}
+
+.contact-link:first-child { border-top: 1px solid var(--gray); }
+
+.contact-link:hover { padding-left: 0.75rem; }
+
+.link-arrow {
+  font-size: 0.9rem;
+  transition: transform var(--transition);
+}
+
+.contact-link:hover .link-arrow { transform: translate(3px, -3px); }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contacts-body { grid-template-columns: 1fr; }
+  .contacts-left { border-right: none; border-bottom: var(--border); }
+}
