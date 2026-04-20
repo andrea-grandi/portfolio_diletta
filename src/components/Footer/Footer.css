@@ -1,0 +1,16 @@
+.footer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-top: var(--border);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: var(--mid);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 200;
+}

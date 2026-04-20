@@ -52,7 +52,7 @@ export default function Home() {
           onMouseUp={onMouseUp}
           onMouseLeave={onMouseUp}
         >
-          {projects.map((p, i) => (
+          {projects.map((p) => (
             <article
               key={p.id}
               className="project-card"
@@ -80,10 +80,6 @@ export default function Home() {
           →
         </button>
       </div>
- 
-      <footer className="home-footer">
-        <span>© {new Date().getFullYear()} Diletta Cellurale. All Rights Reserved.</span>
-      </footer>
     </main>
   )
 }

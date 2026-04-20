@@ -21,11 +21,6 @@ export default function ProjectPage() {
  
   return (
     <main className="project-page">
-      <nav className="project-nav">
-        <button className="nav-back" onClick={() => navigate('/')}>← PORTFOLIO</button>
-        <span className="nav-id">{project.id.toUpperCase()}</span>
-      </nav>
- 
       <div className="project-hero">
         <div className="project-hero-image">
           <img src={project.image} alt={project.title} />

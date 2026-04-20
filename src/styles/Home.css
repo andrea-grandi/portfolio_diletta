@@ -1,8 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  height: 100dvh;
-  overflow: hidden;
+  min-height: calc(80vh - 40px);
 }
  
 /* HEADER */
@@ -190,19 +189,6 @@
  
 .scroll-btn--left { left: 0.75rem; }
 .scroll-btn--right { right: 0.75rem; }
- 
-/* FOOTER */
-.home-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  border-top: var(--border);
-  font-size: 0.6rem;
-  letter-spacing: 0.2em;
-  color: var(--mid);
-  flex-shrink: 0;
-}
  
 /* RESPONSIVE */
 @media (max-width: 600px) {

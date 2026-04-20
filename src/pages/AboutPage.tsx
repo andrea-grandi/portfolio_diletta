@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom'
 import '../styles/AboutPage.css'
 
 const about = {
@@ -21,14 +20,8 @@ const about = {
 }
 
 export default function AboutPage() {
-  const navigate = useNavigate()
-
   return (
     <main className="about-page">
-      <nav className="about-nav">
-        <button onClick={() => navigate('/')}>← HOME</button>
-        <span>ABOUT</span>
-      </nav>
 
       {/* INTRO */}
       <section className="about-intro">

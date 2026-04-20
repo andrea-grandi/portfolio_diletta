@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <button className="navbar-logo" onClick={() => navigate('/')}>
-        PORTFOLIO - DILETTA CELLURALE
+        PORTFOLIO
       </button>
       <div className="navbar-links">
         {links.map((link) => (

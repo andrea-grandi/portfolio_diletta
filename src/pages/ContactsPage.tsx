@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom'
 import '../styles/ContactsPage.css'
 
 const contacts = {
@@ -11,15 +10,8 @@ const contacts = {
 }
 
 export default function ContactsPage() {
-  const navigate = useNavigate()
-
   return (
     <main className="contacts-page">
-      <nav className="contacts-nav">
-        <button onClick={() => navigate('/')}>← HOME</button>
-        <span>CONTACTS</span>
-      </nav>
-
       <div className="contacts-body">
         <div className="contacts-left">
           <p className="contacts-label">EMAIL</p>

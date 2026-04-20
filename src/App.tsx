@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
  
 const ProjectPage = lazy(() => import('./pages/ProjectPage'))
 const GalleryPage = lazy(() => import('./pages/GalleryPage'))
@@ -32,7 +33,7 @@ export default function App() {
     <BrowserRouter>
       <Prefetcher />
       <ScrollToTop />
-      <Navbar />   {/* ← aggiunta qui */}
+      <Navbar />
       <Suspense fallback={<div className="loading">LOADING...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/contacts" element={<ContactsPage />} />
         </Routes>
       </Suspense>
+      <Footer />
     </BrowserRouter>
   )
 }
