@@ -30,7 +30,7 @@ function ScrollToTop() {
  
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio_diletta/">
       <Prefetcher />
       <ScrollToTop />
       <Navbar />
