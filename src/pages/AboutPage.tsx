@@ -3,7 +3,7 @@ import '../styles/AboutPage.css'
 const about = {
   name: 'DILETTA CELLURALE',
   role: 'DESIGNER',
-  bio: 'Una puss.',
+  bio: 'Designer del prodotto con formazione presso l’Accademia di Belle Arti di Bologna, interessata alla progettazione di oggetti e sistemi che uniscono funzionalità, sostenibilità e attenzione all’esperienza dell’utente. Il lavoro spazia tra product design, interior e interaction design, con particolare attenzione alla scelta dei materiali, ai processi costruttivi e al rapporto tra spazio, persona e ambiente. Approccio progettuale orientato alla ricerca, alla sperimentazione e allo sviluppo di soluzioni contemporanee e consapevoli.',
   formation: [
     { year: '2025', title: 'LAUREA TRIENNALE IN DESIGN INDUSTRIALE', place: 'ACCADEMIA DI BELLE ARTI - BOLOGNA (BO)'},
     { year: '2020', title: 'DIPLOMA IN DESIGN DEL PRODOTTO', place: 'ISA ADOLFO VENTURI - MODENA (MO)' },

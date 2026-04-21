@@ -2,10 +2,9 @@ import '../styles/ContactsPage.css'
 
 const contacts = {
   email: 'dilettacellurale@live.it',
-  location: 'Modena, IT',
+  location: 'Modena (MO), Italy',
   links: [
-    { label: 'INSTAGRAM', url: 'https://instagram.com/' },
-    { label: 'LINKEDIN', url: 'https://linkedin.com/' },
+    { label: 'LINKEDIN', url: 'https://www.linkedin.com/in/diletta-cellurale-1aa9a0263/' },
   ],
 }
 
