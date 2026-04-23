@@ -1,22 +1,25 @@
 import '../styles/AboutPage.css'
 
 const about = {
-  name: 'DILETTA CELLURALE',
-  role: 'DESIGNER',
+  name: 'Maria Diletta Cellurale',
+  role: 'JUNIOR DESIGNER',
   bio: 'Designer del prodotto con formazione presso l’Accademia di Belle Arti di Bologna, interessata alla progettazione di oggetti e sistemi che uniscono funzionalità, sostenibilità e attenzione all’esperienza dell’utente. Il lavoro spazia tra product design, interior e interaction design, con particolare attenzione alla scelta dei materiali, ai processi costruttivi e al rapporto tra spazio, persona e ambiente. Approccio progettuale orientato alla ricerca, alla sperimentazione e allo sviluppo di soluzioni contemporanee e consapevoli.',
+  work_experience: [
+    { year: '2026', title: 'Tecnico della Modellazione & Fabbricazione Digitale', place: 'Modularte - Modena (MO)' },
+  ],
   formation: [
-    { year: '2025', title: 'LAUREA TRIENNALE IN DESIGN INDUSTRIALE', place: 'ACCADEMIA DI BELLE ARTI - BOLOGNA (BO)'},
-    { year: '2020', title: 'DIPLOMA IN DESIGN DEL PRODOTTO', place: 'ISA ADOLFO VENTURI - MODENA (MO)' },
+    { year: '2025', title: 'Design Industriale (Laurea triennale)', place: 'Accademia di Belle Arti - Bologna (BO)'},
+    { year: '2020', title: 'Belle Arti - Design del Prodotto (Diploma)', place: 'ISA Adolfo Venturi - Modena (MO)' },
   ], 
   events: [
-    { year: '2024', title: 'Pro-Dotto', place: 'ESTE (PD)' },
-    { year: '2024', title: 'progettAzione', place: 'BOLOGNA (BO)' },
+    { year: '2024', title: 'Pro-Dotto (Workshop)', place: 'Este (PD)' },
+    { year: '2024', title: 'progettAzione (Evento)', place: 'Bologna (BO)' },
   ],
   skills: [
-    'AUTOCAD', 'SKETCHUP', 'ADOBE PHOTOSHOP',
-    'ADOBE ILLUSTRATOR', 'BLENDER',
+    'Autocad', 'Sketchup', 'Adobe Photoshop',
+    'Adobe Illustrator', 'Blender',
   ],
-  lingue: ['ITALIANO (LINGUA MADRE)', 'INGLESE (LIVELLO B1)', ],
+  lingue: ['Italiano (Lingua Madre)', 'Inglese (Livello B1)', ],
 }
 
 export default function AboutPage() {
@@ -31,6 +34,20 @@ export default function AboutPage() {
         </div>
         <div className="intro-right">
           <p className="intro-bio">{about.bio}</p>
+        </div>
+      </section>
+
+      {/* WORK EXPERIENCE */}
+      <section className="about-section">
+        <h2 className="section-label">ESPERIENZE LAVORATIVE</h2>
+        <div className="section-list">
+          {about.work_experience.map((item, i) => (
+            <div key={i} className="list-row">
+              <span className="row-year">{item.year}</span>
+              <span className="row-title">{item.title}</span>
+              <span className="row-place">{item.place}</span>
+            </div>
+          ))}
         </div>
       </section>
 

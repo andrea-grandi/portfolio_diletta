@@ -28,6 +28,11 @@ export default function ProjectPage() {
         <div className="project-hero-meta">
           <p className="meta-category">{project.category}</p>
           <h1 className="meta-title">{project.title}</h1>
+          <div className="project-tags">
+            {project.tags.map((tag) => (
+              <span key={tag} className="tag">{tag}</span>
+            ))}
+          </div>
           <p className="meta-year">{project.year}</p>
         </div>
       </div>
@@ -37,12 +42,6 @@ export default function ProjectPage() {
           <p className="desc-lead">{project.description}</p>
           {project.longDescription.split('\n').filter(Boolean).map((para, i) => (
             <p key={i} className="desc-para">{para}</p>
-          ))}
-        </div>
- 
-        <div className="project-tags">
-          {project.tags.map((tag) => (
-            <span key={tag} className="tag">{tag}</span>
           ))}
         </div>
       </div>

@@ -16,9 +16,15 @@ export default function GalleryPage() {
         <div className="gallery-empty">NO IMAGES YET</div>
       ) : (
         <div className="gallery-grid">
-          {gallery.map((src, i) => (
-            <div key={i} className="gallery-item">
-              <img src={src} alt={`${project.title} — ${i + 1}`} />
+          {gallery.map((item, i) => (
+            <div
+              key={i}
+              className="gallery-item"
+            >
+              <img src={item.src} alt={`${project.title} — ${i + 1}`} />
+              <div className="gallery-item-overlay">
+                <p>{item.description}</p>
+              </div>
               <span className="gallery-item-index">{String(i + 1).padStart(2, '0')}</span>
             </div>
           ))}

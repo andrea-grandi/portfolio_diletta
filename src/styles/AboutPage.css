@@ -150,6 +150,17 @@
   .intro-left { border-right: none; border-bottom: var(--border); }
   .about-section { grid-template-columns: 1fr; }
   .section-label { border-right: none; border-bottom: var(--border); padding: 1.5rem 1rem; }
-  .list-row { grid-template-columns: 60px 1fr; padding: 1rem; }
-  .row-place { display: none; }
+  .list-row { 
+    grid-template-columns: 60px 1fr; 
+    padding: 1rem; 
+    gap: 0.5rem 1rem;
+  }
+  .row-place { 
+    grid-column: 2;
+    text-align: left;
+  }
+  .row-title {
+    grid-row: 1;
+    grid-column: 2;
+  }
 }
